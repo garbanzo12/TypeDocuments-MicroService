@@ -1,17 +1,16 @@
 //Archivo dedicado para tratar las variables .env para que los demas archivos no tengan que utilizarlas
 import dotenv from 'dotenv';
 dotenv.config();
-
 export const config = {
   server: {
-    port: process.env.PORT || 3007,
+    port: process.env.PORT || 3007
   },
   database: {
     server: process.env.DB_SERVER,
     name: process.env.DB_DATABASE,
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
-    domain: process.env.DB_DOMAIN,
+    domain: process.env.DB_DOMAIN
   },
   auth: {
     // Aquí van JWT o API keys que se vayan a implementar en un futuro
